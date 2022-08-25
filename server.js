@@ -26,6 +26,7 @@ app.post('/shortit', (req, res) => {
     let { url } = req.body;
     const newURL = nanoid(8);
     dbPool.query('INSERT INTO urls (org,short) VALUES ($1,$2)', [url, newURL]);
+    
     res.render('newurl', { url, newURL });
 });
 

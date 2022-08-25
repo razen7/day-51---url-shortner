@@ -17,9 +17,16 @@
                 <%= url %>
             </a>
             has been shortned to
-            <a href="<%= newURL %>" target="_blank">localhost/<%= newURL %></a>
+            <a id="shortened" href="<%= newURL %>" target="_blank">
+                <%= newURL %>
+            </a>
         </p>
     </div>
+    <script>
+        window.onload = function () {
+            document.getElementById('shortened').innerHTML = window.location.origin + '/' + document.getElementById('shortened').innerHTML;
+        };
+    </script>
 </body>
 
 </html>
