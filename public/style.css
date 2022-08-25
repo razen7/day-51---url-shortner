@@ -1,0 +1,60 @@
+/* Personal Default CSS Resets - Compulsory */
+:root {
+    --the-red-fence: 2px solid red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Personal Default CSS Resets - Optional */
+body {
+    background-color: rgb(233, 233, 255);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Custom Site Css */
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 1em;
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    background-color: antiquewhite;
+    transition: all 2s;
+}
+
+button:hover{
+    outline: 1px solid;
+}
+
+input[type=url] {
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+}
